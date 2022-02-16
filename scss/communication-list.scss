@@ -1,0 +1,145 @@
+@import "_mixins.scss";
+
+.communication-list {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    max-height: 90px;
+    &__item {
+        border-left: 1px solid #e1e1e1;
+        border-right: 1px solid #e1e1e1;
+        height: inherit;
+        padding: 25px 1vw;
+        align-items: center;
+        position: relative;
+    
+        &:hover {
+            .communication-list {
+                &__submenu-wrapper {
+                    display: block;
+                }
+            }
+            .salons__drop-down-list-icon {
+                transition: transform 0.4s ease;
+                transform: none;
+            }
+        }
+    }
+
+    &__item-wrapper {
+        transition: all 0.4s ease;
+        min-width: min-content;
+        max-width: max-content;
+        align-items: center;
+        justify-content: center;
+        height: inherit;
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+    }
+
+    &__submenu-wrapper {
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        padding: 0px 10px;
+        z-index: 1000;
+    }
+
+    &__submenu {
+        padding: 10px;
+        text-align: center;
+        font-family: Gilroy;
+        font-weight: 500;
+        font-size: 16px;
+        background-color: #e1e1e1;
+        text-transform: uppercase;
+        border: 3px solid #00868a;
+        border-radius: 5px;
+        li {
+            background-color: #ffffff;
+            padding: 5px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                height: 100%;
+            }
+            a {
+                color: black;
+            }
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &__logo {
+        .logo {
+            &__company-name {
+                margin-left: 8px;
+            }
+        }
+    }
+
+    &__phone-number {
+        font-family: Gilroy;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    &__salons {
+        .salons {
+            &__text {
+                font-family: Gilroy;
+                font-weight: 500;
+                font-size: 16px;
+                margin-right: 16px;
+            }
+            &__drop-down-list-icon {
+                transform: rotate(90deg);
+            }
+        }
+    }
+    &__salons-wrapper {
+        display: block;
+    }
+    &__poor-eyesight {
+        background-color: #00868a;
+        border: 0;
+        padding: 0 15px;
+
+        .poor-eyesight {
+            &__text {
+                margin-left: 10px;
+                color: #ffffff;
+                font-family: Gilroy;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 16px;
+                text-transform: uppercase;
+            }
+        }
+    }
+    &__social-media-icon {
+        box-shadow: none;
+        width: 3vw;
+        max-width: 50px;
+    }
+    &__media-wrapper {
+        display: none;
+    }
+    &__menu-bar-wrapper {
+        display: none;
+        cursor: pointer;
+    }
+    &__copyright {
+    }
+    &__privacy {
+        white-space: nowrap;
+    }
+}

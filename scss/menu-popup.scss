@@ -1,0 +1,86 @@
+@import "_mixins.scss";
+
+.menu-popup {
+    transition: all 0.4s ease;
+    display: none;
+    position: fixed;
+    background-color: rgba(10, 10, 10, 0.959);
+    height: 100%;
+    width: 100%;
+    color: whitesmoke;
+    overflow-y: scroll;
+    z-index: 1000;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        font-size: 50px;
+        font-family: Gilroy;
+        margin-bottom: 50px;
+        padding: 20px;
+    }
+
+    &__media-name {
+        a {
+            color: whitesmoke;
+        }
+    }
+
+    &__media-img {
+        img {
+            display: flex;
+            justify-content: center;
+
+            width: 20px;
+        }
+    }
+    #menu-popup__close {
+        cursor: pointer;
+    }
+    &__details {
+        font-family: Gilroy;
+
+        text-align: center;
+        @include adaptiv-font(70, 25);
+        text-transform: uppercase;
+        padding-bottom: 30px;
+
+        summary {
+            cursor: pointer;
+            background-color: rgb(62, 65, 65);
+            padding: 10px;
+        }
+    }
+
+    &__sub-list {
+        transition: all 0.4s ease;
+        li {
+            align-items: center;
+            width: 170px;
+            font-size: 27px;
+            margin: 0 auto;
+            text-transform: capitalize;
+            padding: 20px 0 5px 0;
+        }
+    }
+
+    &__salons {
+        a {
+            color: whitesmoke;
+        }
+    }
+
+    &__medias {
+        li {
+            display: flex;
+            justify-content: space-between;
+        }
+        img {
+            display: flex;
+            justify-content: center;
+        }
+        a {
+            color: whitesmoke;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+@import "_nullstyle.scss";
+@import "_mixins.scss";
+
+body {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "main main"
+        "footer footer";
+    grid-template-rows: 90px 1fr 90px;
+}
+
+.container {
+    max-width: 1296px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #ffffff;
+    grid-area: header;
+}
+
+.main {
+    background-color: #ffffff;
+    grid-area: main;
+}
+
+.footer {
+    background-color: #FFFFFF;
+    grid-area: footer;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("/fonts/Gilroy-Light.otf") format("truetype");
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("/fonts/Gilroy-ExtraBold.otf") format("truetype");
+    font-style: normal;
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    // адрес шрифта и тип
+    src: url("/fonts/gilroy-medium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 500;
+}
+

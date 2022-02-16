@@ -1,0 +1,59 @@
+@import "_mixins.scss";
+
+.footer {
+    .media992 {
+        display: none;
+    }
+    .media768 {
+        display: none;
+    }
+    @media (max-width: 992px) {
+        .communication-list {
+            justify-content: space-around;
+            &__item {
+                border: 0;
+                &:first-child {
+                    border: 0;
+                }
+                &:last-child {
+                    border: 0;
+                }
+            }
+            &__poor-eyesight {
+                padding: 0 8px;
+                border-radius: 50%;
+                width: 40px;
+                .poor-eyesight {
+                    &__text {
+                        display: none;
+                    }
+                }
+            }
+            &__social-media-icon {
+                box-shadow: none;
+                width: 40px;
+            }
+
+            &__social-media-icon-wrapper {
+                display: none;
+            }
+        }
+        .media992 {
+            display: flex;
+            .communication-list__social-media-icon-wrapper {
+                display: block;
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        .media-max {
+            display: none;
+        }
+        .media768{
+            display: flex;
+        }
+        .communication-list__copyright{
+            text-align: center;
+        }
+    }
+}
