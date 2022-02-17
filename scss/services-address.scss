@@ -1,0 +1,14 @@
+.services-address {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.services-address {
+    @media (max-width: 768px) {
+        margin: 0;
+    }
+    @media (max-width: 600px) {
+       flex-direction: column;
+       justify-content: center;
+    }
+}

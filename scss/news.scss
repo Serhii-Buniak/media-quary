@@ -1,0 +1,111 @@
+.news {
+    display: flex;
+    margin-bottom: 75px;
+    &__names {
+        flex: 35%;
+        background-color: #4fbfa5;
+    }
+
+    &__about {
+        flex: 65%;
+        padding-right: 25px;
+        background-color: #e6f3f3;
+    }
+
+    &__mark {
+        background-color: #00868a;
+    }
+    .active {
+        background-color: #00868a;
+    }
+}
+
+.names {
+    &__top {
+        padding: 35px 40px;
+    }
+
+    &__list {
+        li {
+            padding: 35px 40px;
+            font-size: 18px;
+            line-height: 150%;
+            color: #ffffff;
+        }
+    }
+}
+
+.about {
+    &__title {
+        padding: 45px 60px;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 150%;
+        color: #000000;
+    }
+
+    &__facts-list {
+        margin-left: 65px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 150%;
+        li {
+            padding-left: 30px;
+            list-style-image: url("/img/marker.png");
+            padding-bottom: 25px;
+        }
+    }
+}
+
+.news {
+    @media (max-width: 992px) {
+        .names {
+            &__list {
+                li {
+                    padding: 30px 20px;
+                    font-size: 18px;
+                }
+            }
+        }
+        .about {
+            &__title {
+                padding: 45px 60px;
+                font-size: 24px;
+            }
+
+            &__facts-list {
+                margin-left: 65px;
+                font-size: 14px;
+                li {
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        .about {
+            &__facts-list {
+                font-size: 18px;
+            }
+        }
+    }
+
+    @media (max-width: 600px) {
+        .about {
+            &__title {
+                text-align: center;
+                padding: 45px 10px;
+                font-size: 21px;
+            }
+            &__facts-list {
+                margin-left: 0;
+                li {
+                    padding-left: 25px;
+                    list-style-type: none;
+                }
+            }
+        }
+    }
+}

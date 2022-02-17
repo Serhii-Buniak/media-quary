@@ -13,7 +13,7 @@
         padding: 25px 1vw;
         align-items: center;
         position: relative;
-    
+
         &:hover {
             .communication-list {
                 &__submenu-wrapper {
@@ -21,14 +21,14 @@
                 }
             }
             .salons__drop-down-list-icon {
-                transition: transform 0.4s ease;
+              
                 transform: none;
             }
         }
     }
 
     &__item-wrapper {
-        transition: all 0.4s ease;
+       
         min-width: min-content;
         max-width: max-content;
         align-items: center;
@@ -127,7 +127,7 @@
     }
     &__social-media-icon {
         box-shadow: none;
-        width: 3vw;
+        width: 2vw;
         max-width: 50px;
     }
     &__media-wrapper {
@@ -138,8 +138,11 @@
         cursor: pointer;
     }
     &__copyright {
+        font-size: 12px;
+        padding: 10px;
     }
     &__privacy {
+        padding: 12px;
         white-space: nowrap;
     }
 }

@@ -1,0 +1,121 @@
+.special {
+    background: linear-gradient(0, rgba(224, 4, 4, 0) 30%, #e6f3f3 30%);
+    margin-bottom: 75px;
+    &__title {
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 150%;
+        text-align: center;
+        color: #00868a;
+        padding: 80px 0 60px 0;
+    }
+
+    &__list {
+        display: flex;
+        li {
+            position: relative;
+            min-width: 245;
+            padding: 10px;
+        }
+    }
+
+    &__mark {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    &__person {
+        img {
+            width: 100%;
+        }
+    }
+
+    &__more {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #00868a;
+    }
+}
+
+.more {
+    &__text {
+        color: whitesmoke;
+        padding: 5px 10px;
+    }
+
+    &__arrow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 14px;
+        margin: 10px 10px 10px 0;
+    }
+}
+
+@media (max-width: 1100px) {
+    .more {
+        &__text {
+            font-size: 12px;
+        }
+
+        &__arrow {
+            padding: 10px 9px;
+            margin: 10px 10px 10px 0;
+        }
+    }
+}
+@media (max-width: 900px) {
+    .special {
+        &__list {
+            flex-wrap: wrap;
+            li {
+                flex: 50%;
+            }
+        }
+    }
+    .more {
+        &__text {
+            font-size: 21px;
+        }
+
+        &__arrow {
+            padding: 15px 20px;
+            margin: 10px 10px 10px 0;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .more {
+        &__text {
+            font-size: 16px;
+        }
+
+        &__arrow {
+            padding: 15px 20px;
+            margin: 10px 10px 10px 0;
+        }
+    }
+}
+@media (max-width: 600px) {
+    .special {
+        &__list {
+            flex-wrap: wrap;
+            li {
+                flex: 100%;
+            }
+        }
+    }
+    .more {
+        &__text {
+            font-size: 24px;
+        }
+
+        &__arrow {
+            padding: 20px 20px;
+            margin: 10px 20px 10px 20px;
+        }
+    }
+}

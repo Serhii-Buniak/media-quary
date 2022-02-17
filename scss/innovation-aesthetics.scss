@@ -1,5 +1,10 @@
-.innovation-aesthetics{
+.innovation-aesthetics {
     display: flex;
-    justify-content: space-between;
-    background-color: aqua;
+    margin: 75px auto;
+}
+
+.innovation-aesthetics {
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
 }
