@@ -22,12 +22,13 @@ __Typical Device Breakpoints:__
 ```
 
 ___Large:___
-
+![fullscreen.png](https://github.com/Serhii-Buniak/media-quary/blob/master/files_for_readme/fullscreen.png?raw=true)
 
 ___Medium:___
-
+![medium.png](https://github.com/Serhii-Buniak/media-quary/blob/master/files_for_readme/medium.png?raw=true)
 
 ___Small:___
-
+![small.png](https://github.com/Serhii-Buniak/media-quary/blob/master/files_for_readme/small.png?raw=true)
 
 ___MenuBar:___
+![menu.png](https://github.com/Serhii-Buniak/media-quary/blob/master/files_for_readme/menu.png?raw=true)
