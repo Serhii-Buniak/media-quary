@@ -20,3 +20,14 @@ __Typical Device Breakpoints:__
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {...}
 ```
+
+___Large:___
+
+
+___Medium:___
+
+
+___Small:___
+
+
+___MenuBar:___
