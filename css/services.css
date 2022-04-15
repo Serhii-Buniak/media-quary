@@ -1,0 +1,40 @@
+.services__block-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.services__block-list > li {
+  flex: 33.333%;
+  margin-bottom: 30px;
+}
+
+.services__title {
+  font-size: 21px;
+  line-height: 150%;
+  color: #000000;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.services__list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: #000000;
+}
+
+.services__list > li:not(:last-child) {
+  padding-bottom: 15px;
+}
+
+@media (max-width: 992px) {
+  .services__block-list > li {
+    flex: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .services__block-list {
+    text-align: center;
+  }
+}

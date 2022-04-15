@@ -1,0 +1,18 @@
+.services-address {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+@media (max-width: 768px) {
+  .services-address {
+    margin: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .services-address {
+    flex-direction: column;
+    justify-content: center;
+  }
+}

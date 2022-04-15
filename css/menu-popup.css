@@ -1,0 +1,74 @@
+.menu-popup {
+  display: none;
+  position: fixed;
+  background-color: rgba(10, 10, 10, 0.959);
+  height: 100%;
+  width: 100%;
+  color: whitesmoke;
+  overflow-y: scroll;
+  z-index: 1000;
+}
+
+.menu-popup__top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 50px;
+  font-family: Gilroy;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+
+.menu-popup__media-name a {
+  color: whitesmoke;
+}
+
+.menu-popup__media-img img {
+  display: flex;
+  justify-content: center;
+  width: 20px;
+}
+
+.menu-popup #menu-popup__close {
+  cursor: pointer;
+}
+
+.menu-popup__details {
+  font-family: Gilroy;
+  text-align: center;
+  font-size: calc(25px + 76.5 * ((100vw - 320px) / 1296));
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+
+.menu-popup__details summary {
+  cursor: pointer;
+  background-color: #3e4141;
+  padding: 10px;
+}
+
+.menu-popup__sub-list li {
+  align-items: center;
+  width: 170px;
+  font-size: 27px;
+  margin: 0 auto;
+  text-transform: capitalize;
+  padding: 20px 0 5px 0;
+}
+
+.menu-popup__salons a {
+  color: whitesmoke;
+}
+
+.menu-popup__medias li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-popup__medias img {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-popup__medias a {
+  color: whitesmoke;
+}

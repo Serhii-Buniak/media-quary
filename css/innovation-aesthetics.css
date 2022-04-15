@@ -1,0 +1,10 @@
+.innovation-aesthetics {
+  display: flex;
+  margin: 75px auto;
+}
+
+@media (max-width: 768px) {
+  .innovation-aesthetics {
+    flex-direction: column;
+  }
+}

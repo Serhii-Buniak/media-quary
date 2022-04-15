@@ -1,0 +1,74 @@
+@media (max-width: 992px) {
+  .header .communication-list {
+    justify-content: space-around;
+  }
+  .header .communication-list__item {
+    border: 0;
+  }
+  .header .communication-list__item:first-child {
+    border: 0;
+  }
+  .header .communication-list__item:last-child {
+    border: 0;
+  }
+  .header .communication-list__logo .logo__company-name {
+    display: none;
+  }
+  .header .communication-list__salons .salons__text {
+    margin-right: 4px;
+  }
+  .header .communication-list__phone-number {
+    font-size: calc(18px + 3.4 * ((100vw - 320px) / 1296));
+  }
+  .header .communication-list__poor-eyesight {
+    padding: 0 8px;
+    border-radius: 50%;
+    width: 40px;
+  }
+  .header .communication-list__poor-eyesight .poor-eyesight__text {
+    display: none;
+  }
+  .header .communication-list__social-media-icon {
+    box-shadow: none;
+    width: 40px;
+  }
+  .header .communication-list__salons .salons__text {
+    font-size: calc(18px + 3.4 * ((100vw - 320px) / 1296));
+  }
+}
+
+@media (max-width: 768px) {
+  .header .communication-list__social-media-icon-wrapper {
+    display: none;
+  }
+  .header .communication-list__salons-wrapper, .header .communication-list__media-wrapper {
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  .header .communication-list {
+    justify-content: space-around;
+  }
+  .header .communication-list__item {
+    border: 0;
+  }
+  .header .communication-list__item:first-child {
+    border: 0;
+  }
+  .header .communication-list__item:last-child {
+    border: 0;
+  }
+  .header .communication-list__social-media-icon-wrapper, .header .communication-list__salons-wrapper, .header .communication-list__media-wrapper, .header .communication-list__salons-wrapper {
+    display: none;
+  }
+  .header .communication-list__menu-bar-wrapper {
+    display: block;
+  }
+  .header .communication-list__menu-bar img {
+    height: 135%;
+  }
+  .header .communication-list__phone-number {
+    font-size: 15px;
+  }
+}
